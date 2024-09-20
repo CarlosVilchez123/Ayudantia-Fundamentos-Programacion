@@ -11,8 +11,11 @@ El algoritmo de Karatsuba se basa en la tecnica de **divide y venceras**. En lug
 3. **Combinacion:** Combina los resultados de las multiplicaciones recursivas para obtener el resultados final.
 # Ejemplo 
 Supongamos que queremos separar dos números grandes (X) y (Y). Los dividimos en dos partes:
+
+```
 X -> x1 * 10^m + x0
 Y -> y1 * 10^m + y0
+```
 
 Donde (x1) y (x0) son las partes de (X), y (y1) y (y0) son las partes de (Y). Luego, calculamos:
 ```
