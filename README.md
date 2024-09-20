@@ -11,23 +11,21 @@ El algoritmo de Karatsuba se basa en la tecnica de **divide y venceras**. En lug
 3. **Combinacion:** Combina los resultados de las multiplicaciones recursivas para obtener el resultados final.
 # Ejemplo 
 Supongamos que queremos separar dos números grandes (X) y (Y). Los dividimos en dos partes:
-X -> x1*10^m + x0
-Y -> y1*10^m + y0
+X -> x1 * 10^m + x0
+Y -> y1 * 10^m + y0
 
 Donde (x1) y (x0) son las partes de (X), y (y1) y (y0) son las partes de (Y). Luego, calculamos:
-z0 = x0*y0
-z2 = x1*y1
-Z1 = (x1+x0)*(y1*y0) - z2 -z0
+z0 = x0 * y0
+z2 = x1 * y1
+Z1 = (x1+x0) * (y1*y0) - z2 -z0
 
 Finalmente, combianmos estos resultados:
-XY = z2*10^2m + z1*10^m + z0
+XY = z2 * 10^2m + z1 * 10^m + z0
 
 # Implicancia en los algoritmos de Divide y Vencerás
 El algoritmo de Karatsuba es un excelente ejemplo de la técnica de divide y vencerás, que es una estrategia fundamental en la informática. Esta técnica implica dividir un problema en subproblemas más pequeños, resolver esos subproblemas de manera recursiva y luego combinar sus soluciones para resolver el problema original.
 
-El algoritmo de Karatsuba reduce la complejidad de tiempo de la multiplicación de (O(n^2)) a (O(n^{\log_2 3})), lo que es aproximadamente (O(n^{1.585})). Esto lo hace mucho más eficiente para multiplicar números grandes, especialmente cuando se compara con el método tradicional.
-
-Espero que esto te haya ayudado a entender mejor el algoritmo de Karatsuba y su importancia en los algoritmos de divide y vencerás. ¿Hay algo más en lo que pueda ayudarte?
+El algoritmo de Karatsuba reduce la complejidad de tiempo de la multiplicación de (O(n^2)) a (O(n^{\log_2 3})). Esto lo hace mucho más eficiente para multiplicar números grandes, especialmente cuando se compara con el método tradicional.
 
 # PSEUDOCODIGO
 ```
