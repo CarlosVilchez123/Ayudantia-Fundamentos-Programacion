@@ -23,7 +23,7 @@ z0 = x0 * y0
 z2 = x1 * y1
 Z1 = (x1+x0) * (y1*y0) - z2 -z0
 ```
-Finalmente, combianmos estos resultados:
+Finalmente, combinamos estos resultados:
 
 ```
 XY = z2 * 10^2m + z1 * 10^m + z0
