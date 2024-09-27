@@ -22,15 +22,3 @@ Para clonar un repositorio existente:
 ```
 git clone https://github.com/usuario/repositorio.git
 ```
-
-# 4. Ver el Estado del Repositorio
-Para ver el estado actual de tu repositorio:
-```
-git status
-```
-
-# 5. Añadir Cambios
-Para añadir archivos al área de preparación (staging area):
-```
-git add nombre_del_archivo
-```
