@@ -37,6 +37,15 @@ Desventajas:
 2. Matriz de Adyacencia
 Una matriz de adyacencia es una matriz de n×n, donde n es el número de vértices del grafo. Cada celda de la matriz A[i][j] contiene un valor (generalmente 1 o 0) que indica si existe una arista entre los vértices i y j. En el caso de grafos ponderados, la celda puede contener el valor del peso de la arista.
 
+# Ejemplo de salida
+```
+Lista de Adyacencia del Grafo:
+Vértice 0: -> 1 -> 4
+Vértice 1: -> 0 -> 2 -> 3 -> 4
+Vértice 2: -> 1 -> 3
+Vértice 3: -> 1 -> 2 -> 4
+Vértice 4: -> 0 -> 1 -> 3
+```
 # Implementacion de C++
 ```
 #include <iostream>
@@ -108,15 +117,6 @@ Etapas Principales del DFS:
 - Inicialización: Se inicia el recorrido desde un vértice fuente y se marca como visitado.
 - Exploración Recursiva o en Pila: Para cada vértice, el algoritmo recorre todos sus vértices adyacentes no visitados de manera recursiva.
 Retroceso: Si no hay más vértices adyacentes no visitados, el algoritmo retrocede para explorar otros caminos.
-# Ejemplo de salida
-```
-Lista de Adyacencia del Grafo:
-Vértice 0: -> 1 -> 4
-Vértice 1: -> 0 -> 2 -> 3 -> 4
-Vértice 2: -> 1 -> 3
-Vértice 3: -> 1 -> 2 -> 4
-Vértice 4: -> 0 -> 1 -> 3
-```
 
 # Ejercicio
 Escribe un programa en C++ que implemente un grafo no dirigido utilizando una lista de adyacencia. Luego, implementa el algoritmo de Búsqueda en Profundidad (DFS) para explorar el grafo. El programa debe permitir lo siguiente:
