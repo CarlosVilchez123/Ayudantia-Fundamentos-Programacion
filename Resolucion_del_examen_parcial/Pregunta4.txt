@@ -1,0 +1,26 @@
+void ingresaVector(int *p, int n) {
+    // Primera forma: *(p + i)
+    for (auto i = 0; i < n; i++) {
+        cout << "Ingrese el elemento (Forma 1) " << i << ": ";
+        cin >> *(p + i);
+    }
+
+    // Segunda forma: p[i]
+    for (auto i = 0; i < n; i++) {
+        cout << "Ingrese el elemento (Forma 2) " << i << ": ";
+        cin >> p[i];
+    }
+
+    // Tercera forma: i[p]
+    for (auto i = 0; i < n; i++) {
+        cout << "Ingrese el elemento (Forma 3) " << i << ": ";
+        cin >> i[p];
+    }
+
+    // Cuarta forma: Incrementando el puntero
+    for (auto i = 0; i < n; i++) {
+        cout << "Ingrese el elemento (Forma 4) " << i << ": ";
+        cin >> *p;
+        p++; // Mover el puntero al siguiente elemento
+    }
+}
